@@ -1,4 +1,3 @@
-// Función para agregar productos al carrito
 function addToCart(product) {
     let cart = JSON.parse(localStorage.getItem('cart')) || [];
 

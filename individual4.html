@@ -29,9 +29,18 @@
                     <li>Ingredientes clave: Aqua (Water), Cetyl Ethylhexanoate, Glycerin, Butylene Glycol, Caprylic/Capric Triglyceride, Centella Asiatica Extract, Sorbitan Stearate, Argania Spinosa Kernel Oil.</li>
                 </ul>
                 <p class="precio-detalle">$94.900</p>
-                <button class="btn-carrito">Añadir al carrito</button>
-            </div>
-        </section>
-    </main>
-</body>
-</html>
+                <button class="add-to-cart-btn" data-name="Crema Relajante" data-price="94.900">
+    Añadir al Carrito
+</button>
+
+<script>
+    document.querySelector('.add-to-cart-btn').addEventListener('click', function() {
+        const product = {
+            name: this.getAttribute('data-name'),
+            price: parseFloat(this.getAttribute('data-price')),
+            quantity: 1
+        };
+        
+        addToCart(product); 
+    });
+</script>
