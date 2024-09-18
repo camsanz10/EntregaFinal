@@ -1,0 +1,92 @@
+/* General Styles */
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('nosotros.png');
+    background-size: cover;
+}
+
+header nav {
+    background-color: #edf4ef;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+}
+
+header nav a.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2e4859;
+    text-decoration: none;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    color: #2e4859;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* About Section */
+.about-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    padding: 0 20px;
+}
+
+.about-container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    text-align: center;
+}
+
+.about-container h1 {
+    font-size: 2.5rem;
+    color: #2e4859;
+    margin-bottom: 20px;
+}
+
+.about-container p {
+    font-size: 1.2rem;
+    color: #2e4859;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.about-container .btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #2e4859;
+    color: white;
+    font-size: 1rem;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.about-container .btn:hover {
+    background-color: #5f87a1;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #edf4ef;
+    color: #2e4859;
+}

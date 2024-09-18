@@ -1,0 +1,198 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Header Styles */
+header {
+    background-color: #edf4ef;
+    padding: 20px 0;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: -5%;
+    z-index: 1000;
+}
+
+header .logo img {
+    width: 80px;
+    position: sticky;
+    top: 20%;
+    left: 2%
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #2e4859;
+    transition: color 0.5s;
+}
+
+nav ul li a:hover {
+    color: #5f87a1; /* Color suave relacionado con el agua y limpieza */
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('cover.png');
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: 30%; 
+    text-align: center;
+    padding: 150px 20px;
+    color: #f7f7f7;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.hero .btn {
+    background-color: #2e4859;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.hero .btn:hover {
+    background-color: #5f87a1;
+}
+
+/* Product Section */
+.productos-populares {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #fff;
+}
+
+.productos-populares h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.productos-populares .productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+.producto {
+    background-color: #f4f4f9;
+    padding: 20px;
+    border-radius: 10px;
+    transition: box-shadow 0.3s;
+}
+
+.producto img {
+    border-radius: 10px;
+}
+
+.producto:hover {
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.producto p {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+.producto p:last-child {
+    font-weight: bold;
+    font-size: 20px;
+    color: #2e4859;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 40px;
+}
+
+footer h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+footer p {
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    .hero .btn {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .productos-populares h2 {
+        font-size: 2rem;
+    }
+
+    footer h3 {
+        font-size: 1.5rem;
+    }
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle del Producto</title>
+    <link rel="stylesheet" href="styles5.css">
+</head>
+<body>
+    <header>
+        <h1>Detalle del Producto</h1>
+        <a href="index.html" class="volver">← Volver a la tienda</a>
+    </header>
+
+    <main>
+        <section class="detalle-producto">
+            <div class="imagen-producto">
+                <img src="producto2.png" alt="Toner Facial">
+            </div>
+            <div class="info-producto">
+                <h2>Toner Facial</h2>
+                <p class="descripcion-detalle">
+                    Es 100% vegano, está formulado con extractos vegetales y su función principal es la de equilibrar el pH de la piel y así prepararla para los siguientes pasos de la rutina de belleza. Ayuda también a mejorar la piel y a hacerla menos propensa a irritaciones y a que los poros no se obstruyan, previniendo problemas cutáneos como la aparición de espinillas o puntos negros.</li> 
+                </p>
+                <ul class="especificaciones">
+                    <li>Tipo de piel: Piel grasa</li>
+                    <li>Beneficios: Es uno de los tónicos mejor valorados en MiiN Cosmetics. ¡Fíjate en sus reviews!</li>
+                    <li>Tamaño: 180 ml</li>
+                    <li>Ingredientes clave: Aqua (Water), Butylene Glycol, Betaine, Caprylic/Capric Triglyceride, Dimethyl Sulfone, Disodium EDTA, Glycyrrhiza Glabra Root Extract, Centella Asiatica Extract.</li>
+                </ul>
+                <p class="precio-detalle">$38.900</p>
+                <button class="add-to-cart-btn" data-name="Toner Facial" data-price="38.900">
+    Añadir al Carrito
+</button>
+
+<script>
+    document.querySelector('.add-to-cart-btn').addEventListener('click', function() {
+        const product = {
+            name: this.getAttribute('data-name'),
+            price: parseFloat(this.getAttribute('data-price')),
+            quantity: 1
+        };
+        
+        addToCart(product); 
+    });
+</script>
