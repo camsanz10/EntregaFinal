@@ -1,0 +1,133 @@
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('nosotros.png');
+    background-size: cover;
+    color: #333;
+}
+
+img {
+    width: 90px;
+    height: 90px;
+}
+
+header {
+    background-color: #edf4ef;
+    padding: 15px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #2e4859;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #2e4859;
+    text-decoration: none;
+}
+
+main {
+    max-width: 1200px;
+    margin: 120px auto 50px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.perfil-section {
+    padding: 40px;
+}
+
+h1 {
+    color: #2e4859;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.perfil-info {
+    padding: 30px;
+    background-color: #edf4ef;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05);
+    display: inline-block;
+    text-align: left;
+}
+
+.perfil-info h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.perfil-detalle {
+    margin-bottom: 25px;
+}
+
+.perfil-detalle p {
+    font-size: 18px;
+    color: #666;
+    margin: 10px 0;
+}
+
+#logout-btn {
+    background-color: #2e4859;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+#logout-btn:hover {
+    background-color: #5f87a1;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
